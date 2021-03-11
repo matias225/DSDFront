@@ -1,0 +1,27 @@
+<h2>Ingresar producto</h2>
+
+<form (submit)="submit()">
+    <div class="form-group">
+        <label for="code">Código</label>
+    </div>
+    <input type="number" class="form-control" id="code" name="code" [(ngModel)]="model.code">
+    <div class="form-group">
+        <label for="description">Descripción</label>
+    </div>
+    <input type="text" class="form-control" id="description" name="description" [(ngModel)]="model.description"  placeholder="Descripción">
+    <div class="form-group">
+        <label for="price">Precio</label>
+    </div>
+    <input type="number" class="form-control" id="price" name="price" [(ngModel)]="model.price">
+    <div class="form-group">
+        <label for="stock">Stock</label>
+    </div>
+    <input type="number" class="form-control" id="stock" name="stock" [(ngModel)]="model.stock">
+    <div class="form-group">
+        <label for="img_path">Imagen</label>
+    </div>
+    <input type="text" class="form-control" id="img_path" name="img_path" [(ngModel)]="model.img_path">
+    <div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </div>
+</form>
