@@ -7,7 +7,7 @@ import { StockForm } from './stock-form'
   styleUrls: ['./stock-form.component.scss']
 })
 export class StockFormComponent implements OnInit {
-  model: StockForm = {code: 1, description: '', price: 0, stock: 0, img_path: ''}
+  model: StockForm = {code: 0, description: '', price: 0, stock: 0, img_path: ''}
   constructor() { }
 
   ngOnInit(): void {
